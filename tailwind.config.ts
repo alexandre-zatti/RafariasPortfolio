@@ -10,13 +10,13 @@ const config: Config = {
     backgroundImage: {
       gridPattern: 'url(/grid.svg)',
     },
-    colors: {
-      rafaPurple: '#B2A4FF',
-      rafaRed: '#FFB4B4',
-      rafaOrange: '#FFDEB4',
-      rafaYellow: '#FDF7C3'
-    },
     extend: {
+      colors: {
+        rafaPurple: '#B2A4FF',
+        rafaRed: '#FFB4B4',
+        rafaOrange: '#FFDEB4',
+        rafaYellow: '#FDF7C3'
+      },
       fontFamily: {
         display: 'var(--font-fraunces)',
         body: 'var(--font-inter)',
@@ -46,20 +46,12 @@ const config: Config = {
         semi: '600',
         heading: '700',
       },
-      boxShadow: {
+      dropShadow: {
         base: '2px 2px 0 #000000',
-        // 'desktop': '3px 3px 0 #000000',
-      },
-      translate: {
-        boxShadowX: '2px',
-        boxShadowY: '2px',
-        reverseBoxShadowX: '-2px',
-        reverseBoxShadowY: '-2px',
       },
       borderRadius: {
         base: '5px'
-      },
-      backgroundImage: {}, // Put here later the grid as background image
+      }
     },
   },
   plugins: [],
