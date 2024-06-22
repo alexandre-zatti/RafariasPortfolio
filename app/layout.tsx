@@ -5,13 +5,13 @@ import { ReactNode } from "react";
 
 
 const fraunces = Fraunces({
-  subsets: ['latin'],
-  weight: ['300', '400', '700'],
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
 });
 
 const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '600'],
+  subsets: ["latin"],
+  weight: ["400", "600"],
 });
 
 export const metadata: Metadata = {
