@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
+import clsx from "clsx";
 
 
 const fraunces = Fraunces({
@@ -27,7 +28,7 @@ export default function RootLayout(
   }>) {
   return (
     <html lang="en">
-    <body className={`${inter.className} ${fraunces.className}`}>{children}
+    <body className={clsx(inter.className, fraunces.className)}>{children}
     </body>
     </html>
   );
