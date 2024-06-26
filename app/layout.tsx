@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 
 const fraunces = Fraunces({
@@ -28,7 +28,8 @@ export default function RootLayout(
   }>) {
   return (
     <html lang="en">
-    <body className={clsx(inter.className, fraunces.className)}>{children}
+    <body className={cn("antialiased", inter.className, fraunces.className)}>
+    {children}
     </body>
     </html>
   );

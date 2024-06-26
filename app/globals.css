@@ -5,6 +5,12 @@
 :root {
     --font-fraunces: 'Fraunces', serif;
     --font-inter: 'Inter', sans-serif;
+    --rafa-white: #FFFFFF;
+    --rafa-purple: #B2A4FF;
+    --rafa-red: #FFB4B4;
+    --rafa-orange: #FFDEB4;
+    --rafa-yellow: #FDF7C3;
+    --border-color: #000000
 }
 
 h1, h2, h3, h4 {
