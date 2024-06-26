@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 
 type FullVhSectionProps = {
   children: ReactNode;
@@ -9,9 +9,9 @@ type FullVhSectionProps = {
 
 export const FullVhSection: React.FC<FullVhSectionProps> = ({children, className, innerClassName}) => {
   return (
-    <section className={clsx("flex justify-center", className)}>
+    <section className={cn("min-h-screen", className)}>
       <div
-        className={clsx("max-w-screen-2xl grid grid-cols-4 gap-4 pl-4 pr-4 xl:grid-cols-12 xl:gap-8", innerClassName)}>
+        className={cn("bg-grid min-h-screen grid grid-cols-4 gap-4 pl-4 pr-4 xl:grid-cols-12 xl:gap-8", innerClassName)}>
         {children}
       </div>
     </section>

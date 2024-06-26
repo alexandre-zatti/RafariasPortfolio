@@ -7,15 +7,18 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    backgroundImage: {
-      gridPattern: "url(/grid.svg)",
-    },
     extend: {
+      backgroundImage: {
+        grid: "url('/grid.svg')"
+      },
       colors: {
-        rafaPurple: "#B2A4FF",
-        rafaRed: "#FFB4B4",
-        rafaOrange: "#FFDEB4",
-        rafaYellow: "#FDF7C3"
+        overlay: "rgba(0,0,0,0.8)",
+        border: "var(--border-color)",
+        rafaPurple: "var(--rafa-purple)",
+        rafaRed: "var(--rafa-red)",
+        rafaOrange: "var(--rafa-orange)",
+        rafaYellow: "var(--rafa-yellow)",
+        rafaWhite: "var(--rafa-white)"
       },
       fontFamily: {
         display: "var(--font-fraunces)",
@@ -46,14 +49,22 @@ const config: Config = {
         semi: "600",
         heading: "700",
       },
+      boxShadow: {
+        light: "2px 2px 0px 0px #000000",
+      },
       dropShadow: {
         base: "2px 2px 0 #000000",
       },
       borderRadius: {
         base: "5px"
-      }
-    },
+      },
+      translate: {
+        boxShadowX: "2px",
+        boxShadowY: "2px",
+      },
+    }
   },
-  plugins: [],
-};
-export default config;
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config
+
+export default config
